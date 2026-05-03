@@ -4,12 +4,15 @@ import java.util.ArrayList;
 
 public class OrarioLezioni {
     public ArrayList<Lezione> listaLezioni;
-    public String annoAccademico;
     public int anno;
 
-    public OrarioLezioni(ArrayList<Lezione> listaLezioni, String annoAccademico, int anno) {
-        this.listaLezioni = listaLezioni;
-        this.annoAccademico = annoAccademico;
+    public OrarioLezioni(ArrayList<Lezione> listaLezioni, int anno) {
+        if(listaLezioni != null) {
+            this.listaLezioni = listaLezioni;
+        }
+        else {
+            this.listaLezioni = new ArrayList<>();
+        }
         this.anno = anno;
     }
 

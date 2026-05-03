@@ -2,12 +2,12 @@ package model;
 
 public class Insegnamento {
     public String nome;
-    public int anno;
+    public int annoCorso;
     public int CFU;
 
-    public Insegnamento(String nome, int anno, int CFU) {
+    public Insegnamento(String nome, int annoCorso, int CFU) {
         this.nome = nome;
-        this.anno = anno;
+        this.annoCorso = annoCorso;
         this.CFU = CFU;
     }
 }
