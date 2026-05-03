@@ -26,4 +26,8 @@ public class Responsabile extends Docente{
     public OrarioLezioni creaOrarioLezioni(ArrayList<Lezione> lezioni, String annoAccademico, int anno) {
         return new OrarioLezioni(lezioni, annoAccademico, anno);
     }
+
+    public void aggiungiLezione(OrarioLezioni orarioLezioni, Lezione lezione) {
+        orarioLezioni.aggiungiLezione(lezione);
+    }
 }
